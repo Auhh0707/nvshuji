@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { 
+            background: #F3E5F5; 
+            margin: 0; 
+            padding-bottom: 60px; 
+            color: #4A148C; 
+            font-family: sans-serif;
+        }
+        header { 
+            padding: 20px 50px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 2px solid #E1BEE7; 
+        }
+        .logo-box { 
+            width: 50px; 
+            height: 50px; 
+            background: #D1C4E9; 
+            border: 2px solid #fff; 
+        }
+        nav { 
+            background: #5E35B1; 
+            padding: 15px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 60px; 
+        }
+        nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 16px;
+        }
+        nav a:hover{
+            opacity: 0.8;
+        }
+
+        .container { 
+            width: 80%; 
+            margin: 50px auto 0; 
+        }
+        .page-title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #4A148C;
+        }
+        .card{
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        #inputHanzi {
+            width: 100%;
+            height: 120px;
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid #D1C4E9;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:#4A148C;
+        }
+
+        #showNushu {
+            width: 100%;
+            min-height: 180px;
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 40px;
+            border: 1px solid #D1C4E9;
+            border-radius: 8px;
+            box-sizing: border-box;
+            line-height: 1.8;
+        }
+
+        @font-face {
+            font-family: "MyNushu";
+            src: url("NyushuFengQi-1.003.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        #showNushu{
+            font-family: "MyNushu";
+        }
+
+        .tips{
+            margin-top:20px;
+            color:#7B1FA2;
+            font-size:15px;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div style="display:flex; align-items:center; gap:15px;">
+        <div class="logo-box">
+            <img src="logo.png" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <strong style="font-size:22px;">女书·迹</strong>
+    </div>
+    <div><input type="text" placeholder="搜索内容"> <button>搜索</button></div>
+</header>
+
+<nav>
+    <a href="index.html">首页</a>
+    <a href="knowledge.html">女书科普</a>
+    <a href="story.html">女书故事</a>
+    <a href="translator.html">字库翻译</a>
+</nav>
+
+<div class="container">
+    <div class="page-title">女书在线字库翻译器</div>
+
+    <div class="card">
+        <h3>汉字输入区</h3>
+        <textarea id="inputHanzi" placeholder="请在此输入任意汉字、词语、句子，将自动转换为女书字体展示"></textarea>
+
+        <h3 style="margin-top:30px;">女书实时展示区</h3>
+        <div id="showNushu"></div>
+
+        <div class="tips">
+            ✨ 基于女书同音通用规则，同音汉字将显示为统一女书字形
+        </div>
+    </div>
+</div>
+
+<script>
+    const input = document.getElementById('inputHanzi');
+    const showArea = document.getElementById('showNushu');
+
+    input.addEventListener('input', function() {
+        showArea.textContent = this.value;
+    });
+</script>
+
+</body>
+</html>

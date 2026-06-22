@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>女书故事 - 女书·迹</title>
+    <style>
+        /* 全局样式与首页完全一致 */
+        body { 
+            background: #F3E5F5; 
+            margin: 0; 
+            padding-bottom: 60px; 
+            color: #4A148C; 
+            font-family: sans-serif;
+        }
+        header { 
+            padding: 20px 50px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 2px solid #E1BEE7; 
+        }
+        .logo-area { 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+        }
+        .logo-box { 
+            width: 50px; 
+            height: 50px; 
+            background: #D1C4E9; 
+            border: 2px solid #fff; 
+        }
+        nav { 
+            background: #5E35B1; 
+            padding: 15px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 60px; 
+        }
+        nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+      .banner { 
+            width: 100%; 
+            height: 350px; 
+            background: #E1BEE7; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #000;
+        }
+        /* 内容区域样式 */
+        .content-wrap {
+            padding: 40px 100px;
+        }
+        .main-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #4A148C;
+            margin-bottom: 15px;
+        }
+        .intro-text {
+            line-height: 1.8;
+            text-indent: 2em;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        /* 三列卡片布局 */
+        .card-row {
+            display: flex;
+            gap: 2%;
+            margin-bottom: 40px;
+        }
+        .card {
+            width: 32%;
+        }
+        .card-img {
+            width: 100%;
+            height: 220px;
+            background: #D1C4E9;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4A148C;
+            margin-bottom: 8px;
+        }
+        .card-text {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        /* 左图右文布局 */
+        .two-col-row {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        .col-img {
+            width: 32%;
+            height: 380px;
+            background: #D1C4E9;
+            border: 3px solid #fff;
+            overflow: hidden;
+        }
+        .col-text {
+            width: 65%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏（与首页完全一致） -->
+    <header>
+        <div class="logo-area">
+            <div class="logo-box">
+                <img src="logo.png" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <strong style="font-size:22px;">女书·迹</strong>
+        </div>
+        <div>
+            <input type="text" placeholder="搜索内容" style="padding:6px 10px; border:1px solid #999;">
+            <button style="padding:6px 12px; background:#333; color:#fff; border:none;">搜索</button>
+        </div>
+    </header>
+
+    <!-- 导航栏（与首页完全一致） -->
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="knowledge.html">女书科普</a>
+        <a href="story.html">女书故事</a>
+        <a href="translator.html">字库翻译</a>
+
+    </nav>
+
+    <!-- Banner区域（与模板一致，预留图片位） -->
+    <div class="banner">
+        <img src="p1.png" style="width:100%; height:100%; object-fit:cover;"> 
+    </div>
+    <div class="split-bar"></div>
+
+    <!-- 内容区域（严格匹配模板布局） -->
+    <div class="content-wrap">
+        <!-- 开篇大段文字 -->
+        <h2 class="main-title">与姊同书————《姑娘结交老同书》</h2>
+        <p>
+            湖南江永的乡村里，曾有一群姐妹，用自己创造的文字，写下生活的悲欢、岁月的暖。那些婚嫁时赠予的“三朝书”，是她们互诉心事的密语，是分担苦难的依靠，是封建岁月里，悄悄筑起的温暖精神角落。通过几页书信，想邀你走进她们的故事，读懂文字里的深情，感受女性之间最坚韧的陪伴。<br>
+            “与姊同书”取自《诗经》“与子同袍”的念想，只是把战场的并肩，换成了姐妹的同书 --“书”是悄悄写下的字，也是彼此诉说的情；“姊”是心照不宣的伴，也是代代相传的暖。这是属于“老同”（结拜姐妹）的私密约定，藏着最真挚的女性情谊。</p>
+
+        <!-- 第一组三列卡片 -->
+        <div class="card-row">
+            <div class="card">
+                <div class="card-img">
+                    <img src="p3.1.jpg" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <h3 class="card-title">第一页</h3>
+                <p class="card-text">译文:
+新起围墙栽花树 海棠开开热水红 牡丹取齐折扇上 先奉知人你处开
+石榴一双牡丹称 凤配金鸡天遇成 先奉吹凉到贵府 惊动姑娘一位芳
+好恩结为东对了 不得力时相会芳 又妨我芳假相称 妨怕...</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="p3.2.jpg" style="width:100%; height:100%; object-fit:cover;"> 
+                </div>
+                <h3 class="card-title">第二页</h3>
+                <p class="card-text">译文:
+妨怕姑娘几样当 阳鸟闻声不见面 远听何歉好风光 一取良门家规好
+二取风花你合时 世上聪明算开个 始我起心先送热 来问姑娘真不真
+若是...</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="p3.3.jpg" style="width:100%; height:100%; object-fit:cover;"> 
+                </div>
+                <h3 class="card-title">第三页</h3>
+                <p class="card-text">若是真心侬二位 八月神堂共一双 若是姑娘不嫌弃 侬就二人交过恩
+不过我家难比你 家中贫寒不比芳 侬是结交同耍乐 正是楼中欢过时
+侬是侬亲结为义 二位结交望长形 我到姨家同...</p>
+            </div>
+        </div>
+
+        <!-- 第二组三列卡片 -->
+        <div class="card-row">
+            <div class="card">
+                <div class="card-img">
+                    <img src="p3.4.jpg" style="width:100%; height:100%; object-fit:cover;"> 
+                </div>
+                <h3 class="card-title">第四页</h3>
+                <p class="card-text">我到姨家同耍乐 二位坐齐知实心 粗字粗针到贵府 只望姑娘请谅宽
+亲家舅娘请谅大 不比贵家礼义全 你在高堂好过日子 对龙对凤左右身
+台到姨家同耍乐 曰起回家不舍离</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="p3.5.jpg" style="width:100%; height:100%; object-fit:cover;"> 
+                </div>
+                <h3 class="card-title">第五页</h3>
+                <p class="card-text">亲家舅娘多好尽 算我红花一样陪 只妒贵家好过日子 孙曾满堂胜四边
+老同娘边如珠宝 两个姑爷姊一个 你嘛楼中君子女 书家出身礼义人
+我就千行难比你 姐守空房两朵花</p>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="p3.6.jpg" style="width:100%; height:100%; object-fit:cover;"> 
+                </div>
+                <h3 class="card-title">第六页</h3>
+                <p class="card-text">只靠郎公刚强在 七十有余把家当 上无兄来下无弟 姐娘年轻守空房
+上无倚来下无靠 常到姨家算解闷 眼前光辉容易过 台姐年高有字难
+是望老同不嫌弃 接你到来开姐心</p>
+            </div>
+        </div>
+
+        <!-- 左图右文板块 -->
+        <div class="two-col-row">
+    <div class="col-img" style="height:auto;">
+        <img src="p3.7.jpg" style="width:100%;height:auto;display:block;">
+    </div>
+    <div class="col-text">
+        <h2 class="main-title">一纸女书，半生相伴 — 记义年华</h2>
+        <p>义年华是湖南江永上江圩桐口村人，1907年出生，是近代最具代表性的女书传承人之一，也是留存大量完整女书手抄本的民间女性。她一生饱尝孤苦，年轻时丈夫早早离世，无儿无女，孤身一人守着空房度日，常年依靠结拜姐妹（当地称为“老同”）互相慰藉、扶持。她自幼习得女书，一生写下数十本女书手稿，内容大多是写给结拜姐妹的书信、诉苦长歌、结交誓词，你网页素材里这份《姑娘结交老同书》，就是她亲手抄写流传下来的经典作品。</p>
+        <p>旧时江永女子不能入学读书，无法用汉字自由抒发内心，义年华便靠着女书，和一众结义姐妹搭建起只属于女性的精神世界。义年华中年丧夫，家中贫寒、无依无靠，正如她在自己写的女书歌谣里倾诉：“上无兄来下无弟，姐娘年轻守空房，上无倚来下无靠”。漫长孤寂的岁月里，阁楼、针线、女书是她全部的陪伴。每逢烦闷难熬，她就提笔写下长篇女书，寄给相隔各村的结拜姐妹，诉说独居的苦楚、对温暖陪伴的渴求。</p>
+        <p>她写下《姑娘结交老同书》，全篇以歌谣形式，细细诉说与姐妹结为老同的心愿：夸赞对方品性温良、家世和善，盼着八月一同到祠堂结拜，许下长久相伴的约定；她坦言自家清贫，生怕配不上对方，又满心期盼姐妹不要嫌弃自己，闲暇时常来家中相伴，排解独居苦闷。平日里，她与姐妹靠女书书信往来：走亲戚时写信分享见闻，受委屈时互写文字宽慰，逢年过节互赠写有女书的扇面、绢布。哪怕相隔数十里，一卷手写女书，就能把彼此的心事、温柔与共情传递过去。</p>
+        <p>晚年的义年华视力衰退、生活清贫，依旧坚持抄写女书。她把一生的委屈、温柔、女性之间独有的扶持情谊，全部留存进薄薄的纸页。她留下的手稿完整记录了旧时女性结拜“老同”的习俗，如今被收录进《中国女书合集》，成为研究女性情谊、民间女书文学最珍贵的实物史料。</p>
+        <p>义年华不只是女书的书写者，更是千万旧时底层女性的缩影：在男性主导、女性无处发声的年代，她依靠女书获得情绪出口，依靠同性之间的陪伴熬过孤苦一生，用文字留存下独属于女性之间纯粹、坚韧的羁绊。</p>
+    </div>
+</div>
+    </div>
+</body>
+</html>
