@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <link rel="preload" href="./NyushuFengQi-1.003.ttf" as="font" type="font/ttf" crossorigin>
     <style>
         body { 
             background: #F3E5F5; 
@@ -83,9 +84,10 @@
 
         @font-face {
             font-family: "MyNushu";
-            src: url("NyushuFengQi-1.003.ttf") format("truetype");
+            src: url("./NyushuFengQi-1.003.ttf") format("truetype");
             font-weight: normal;
             font-style: normal;
+            font-display:swap;
         }
         #showNushu{
             font-family: "MyNushu";
